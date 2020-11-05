@@ -9,7 +9,7 @@ $(function () {
         };
 
         // Send the PUT request.
-        $.ajax("/api/burgers" + id, {
+        $.ajax("/api/burgers/" + id, {
             type: "PUT",
             data: newDevouredState
         }).then(
@@ -21,7 +21,7 @@ $(function () {
         );
     })
 
-    $(".create-form").on("submit", function (event) {
+    $(".create-burger").on("submit", function (event) {
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
 
@@ -43,7 +43,7 @@ $(function () {
         );
     });
 
-    $(".delete_burger").on("submit", function (event) {
+    $(".delete-burger").on("click", function (event) {
         var id = $(this).data("id");
 
         $.ajax("/api/burgers/" + id, {
