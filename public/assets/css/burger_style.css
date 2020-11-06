@@ -1,0 +1,42 @@
+* {
+    font-family: 'Righteous', cursive;
+    color:black
+}
+
+body  {
+    background-color: white;
+    
+}
+h1 {
+    color: white;
+    font-size: 4rem;
+}
+
+.head-container {
+    background-color: blue;
+    display: flex;
+    text-align:center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    
+}
+.uneaten-burgers {
+    width: 50%;
+    text-align:center;
+}
+
+.eaten-burgers {
+    width: 50%;
+    text-align:center;
+}
+
+.create-burger {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
