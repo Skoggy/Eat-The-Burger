@@ -46,12 +46,13 @@ $(function () {
     $(".delete-burger").on("click", function (event) {
         var id = $(this).data("id");
 
-        $.ajax("/api/burgers/" + id, {
+        $.ajax("/api/burgers/ " + id, {
             type: "DELETE"
-        }).then(function () {
-            console.log(`Burger ${id} has been deleted!`)
-            location.reload()
-        })
+        }).then(
+            function () {
+                console.log(`Burger ${id} has been deleted!`)
+                location.reload()
+            })
     })
 
 })
