@@ -2,7 +2,7 @@
 
 USE burgers_db;
 
-INSERT INTO burgers 
-VALUES ("Big Mac", "true"),
- ("Double Cheeseburger", "false"), 
- ("Hamburger", "true");
+INSERT INTO burgers(burger_name, devoured)
+VALUES ("Big Mac", true),
+ ("Double Cheeseburger", false), 
+ ("Hamburger", true);
